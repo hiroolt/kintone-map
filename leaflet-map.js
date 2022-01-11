@@ -46,13 +46,14 @@ https://developer.kintone.io/hc/en-us/articles/360000365282-Display-Maps-With-Le
     // Obtain a list of events
 
     var eventPoints = [];
+    var kintone_domain = "https://XXXX.cybozu.com/k/****/"; // Insert kintone domain name at XXXX, and Insert App number at ****
 
     for (var i = 0; i < event.records.length; i++) {
       var record = event.records[i];
       var lat = record.Lat.value; // Gets data form latitude text field from the Record
       var lng = record.Lng.value; // Gets data form longitude text field from the Record
       var name = record.Event.value;      // Gets data from "Event" text field from the Record
-      var recURL = "https://toyooka-city.cybozu.com/k/11/show#record=" + record.レコード番号.value; //Get the URL of the record. Pay attention to the domain name when applying it.
+      var recURL = kintone_domain + "show#record=" + record.レコード番号.value; //Get the URL of the record. Pay attention to the domain name when applying it.
       var eventPoint = [lat, lng, name, recURL];
       eventPoints.push(eventPoint);
     }

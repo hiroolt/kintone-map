@@ -15,6 +15,11 @@ https://unpkg.com/leaflet@1.7.1/dist/leaflet.js
 kintoneのアプリ 管理画面から、以下のCSSを追加
 https://unpkg.com/leaflet@1.7.1/dist/leaflet.css
 
+# Usage
+
+本スクリプトの"kintone_domain"編集を、お使いのkintone環境に合わせて編集してください。
+XXXXにはドメイン名、****にはアプリ番号を入力します。
+
 # Note
 
 登録された位置情報の変更は、"一応"できるが現時点でスマートではない。
