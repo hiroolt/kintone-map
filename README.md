@@ -8,7 +8,7 @@ kintoneにOpenStreetMapで位置情報を可視化するためのカスタマイ
 
 # Requirement
 
-kintoneのアプリ 管理画面から、以下のJavaScriptを追加
+kintoneのアプリ 管理画面から、本JavaScriptファイルを追加した後、以下のJavaScriptを追加
 https://js.kintone.com/jquery/3.4.1/jquery.min.js
 https://unpkg.com/leaflet@1.7.1/dist/leaflet.js
 
